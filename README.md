@@ -1,2 +1,0 @@
-# sorpresitajiji
-una linda sorpresita
