@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #1b0d2b, #05010a);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contenedor-mensaje {
+    z-index: 10;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #be4dff, 0 0 30px #be4dff;
+}
+
+p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.particula {
+    position: absolute;
+    bottom: -10%;
+    user-select: none;
+    pointer-events: none;
+    animation: lluvia linear forwards;
+}
+
+@keyframes lluvia {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
